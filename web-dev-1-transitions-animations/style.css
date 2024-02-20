@@ -1,0 +1,55 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    
+    animation: formChange 3s linear infinite;
+}
+
+.container:hover{
+    opacity: 0;
+}
+
+@keyframes formChange {
+    0% {
+        border-top-right-radius: 50%;
+    }
+    25%{
+        border-radius: 50% 0% 50% 50%;
+    }
+    50%{
+        border-radius: 0% 0% 50% 50%;
+    }
+    75%{
+        border-radius: 0% 0% 50% 0%;
+    }
+    100%{
+        border-radius: 0%;
+    }
+}
+
+.base {
+    margin-top: 10px;
+    max-width: 200px;
+    height: 50px;
+    background-color: grey;
+}
+
+.loading {
+    margin-top: 10px;
+    max-width: 200px;
+    height: 50px;
+    
+    background-color: green;
+    animation: fillloading 3s linear infinite;
+}
+
+@keyframes fillloading {
+    0%, 100% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
